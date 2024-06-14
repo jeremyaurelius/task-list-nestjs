@@ -1,8 +1,8 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { bootstrapAppShared } from './boostrap-app-shared';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await bootstrapAppShared();
   await app.listen(3000);
 }
+
 bootstrap();
