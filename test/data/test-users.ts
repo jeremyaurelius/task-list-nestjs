@@ -5,7 +5,7 @@ export const TEST_USERS = [
     firstName: 'Jeremy',
     email: 'jeremy@example.com',
     password: '1235',
-    adminType: 'admin',
+    adminType: 'admin' as const,
   },
   {
     userID: '6fecd063-5ba4-4db5-bbc1-5c5a3476f1fe',
